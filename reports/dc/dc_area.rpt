@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : alu_sync_wrapper
+Version: X-2025.06-SP5-5
+Date   : Tue Nov 10 11:42:32 2026
+****************************************
+
+Library(s) Used:
+
+    M31LLSC733GL150MS_25CTT3P3_ctyp_nldm (File: /home/chuletax/ALU_Plus_Chuleta/pdk/m31/M31LLSC733GL150MS_25CTT3P3_ctyp_nldm.db)
+
+Number of ports:                           57
+Number of nets:                          4981
+Number of cells:                         4891
+Number of combinational cells:           4804
+Number of sequential cells:                87
+Number of macros/black boxes:               0
+Number of buf/inv:                       1098
+Number of references:                      84
+
+Combinational area:              57010.867968
+Buf/Inv area:                     7270.502345
+Noncombinational area:            2775.628777
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 59786.496744
+Total area:                 undefined
+1

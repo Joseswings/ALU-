@@ -1,0 +1,27 @@
+# Logs, temporales y artefactos de herramientas EDA
+*.log
+*.jou
+*.tmp
+*.swp
+*.bak
+alib-*/
+csrc/
+INCA_libs/
+simv*
+*.vcd
+*.fsdb
+*.wlf
+*.saif
+*.ddc
+*.db
+*.ndm
+*.nlib/
+*.dlib/
+*.mw
+*.sdf
+*.spef
+*.spf
+*.def
+*.lef
+*.lib
+*.gds.gz

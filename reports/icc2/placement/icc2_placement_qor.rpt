@@ -1,0 +1,104 @@
+Warning: Detected pins or ports without physical pin shapes. The first few such pins or ports are: rst, a_in[12], a_in[8], a_in[4], a_in[0]. (DPPA-325)
+Warning: Detected pins or ports without physical pin shapes. The first few such pins or ports are: a_in[15], a_in[11], a_in[7], a_in[3], b_in[15]. (DPPA-325)
+Warning: Detected pins or ports without physical pin shapes. The first few such pins or ports are: a_in[14], a_in[10], a_in[6], a_in[2], b_in[14]. (DPPA-325)
+Warning: Detected pins or ports without physical pin shapes. The first few such pins or ports are: clk, a_in[13], a_in[9], a_in[5], a_in[1]. (DPPA-325)
+****************************************
+Report : qor
+Design : alu_sync_wrapper
+Version: Y-2026.03-SP2
+Date   : Tue Nov 10 11:55:24 2026
+****************************************
+
+
+Scenario           'default'
+Timing Path Group  '**in2reg_default**'
+----------------------------------------
+Levels of Logic:                      2
+Critical Path Length:              3.81
+Critical Path Slack:               5.84
+Critical Path Clk Period:         10.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'default'
+Timing Path Group  '**reg2out_default**'
+----------------------------------------
+Levels of Logic:                      0
+Critical Path Length:              0.51
+Critical Path Slack:               7.29
+Critical Path Clk Period:         10.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'default'
+Timing Path Group  'clk'
+----------------------------------------
+Levels of Logic:                     69
+Critical Path Length:             12.61
+Critical Path Slack:              -2.56
+Critical Path Clk Period:         10.00
+Total Negative Slack:            -37.38
+No. of Violating Paths:              18
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              0
+Hierarchical Port Count:              0
+Leaf Cell Count:                   4751
+Buf/Inv Cell Count:                1013
+Buf Cell Count:                     284
+Inv Cell Count:                     729
+Combinational Cell Count:          4696
+   Single-bit Isolation Cell Count:                        0
+   Multi-bit Isolation Cell Count:                         0
+   Isolation Cell Banking Ratio:                           0.00%
+   Single-bit Level Shifter Cell Count:                    0
+   Multi-bit Level Shifter Cell Count:                     0
+   Level Shifter Cell Banking Ratio:                       0.00%
+   Single-bit ELS Cell Count:                              0
+   Multi-bit ELS Cell Count:                               0
+   ELS Cell Banking Ratio:                                 0.00%
+Sequential Cell Count:               55
+   Integrated Clock-Gating Cell Count:                     0
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       55
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            1.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:            56707.66
+Noncombinational Area:          2506.29
+Buf/Inv Area:                   7093.09
+Total Buffer Area:              2685.31
+Total Inverter Area:            4407.78
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                   59534.53
+Net YLength:                   60592.51
+----------------------------------------
+Cell Area (netlist):                          59213.95
+Cell Area (netlist and physical only):        59213.95
+Net Length:                   120127.04
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              4843
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1

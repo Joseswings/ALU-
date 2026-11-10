@@ -1,0 +1,36 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : alu_sync_wrapper
+Version: X-2025.06-SP5-5
+Date   : Tue Nov 10 11:42:32 2026
+****************************************
+
+
+   max_delay/setup ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   zero_out_reg/D               9.84          10.82 r        -0.99  (VIOLATED)
+   result_out_reg[1]/D          9.70          10.46 f        -0.76  (VIOLATED)
+   result_out_reg[0]/D          9.68          10.39 f        -0.72  (VIOLATED)
+   result_out_reg[7]/D          9.69          10.33 f        -0.64  (VIOLATED)
+   result_out_reg[12]/D         9.68          10.29 f        -0.62  (VIOLATED)
+   result_out_reg[8]/D          9.70          10.31 f        -0.61  (VIOLATED)
+   result_out_reg[3]/D          9.68          10.28 f        -0.61  (VIOLATED)
+   result_out_reg[2]/D          9.68          10.28 f        -0.60  (VIOLATED)
+   result_out_reg[4]/D          9.69          10.28 f        -0.59  (VIOLATED)
+   result_out_reg[9]/D          9.83          10.41 r        -0.58  (VIOLATED)
+   result_out_reg[5]/D          9.83          10.40 r        -0.57  (VIOLATED)
+   negative_out_reg/D           9.69          10.25 f        -0.56  (VIOLATED)
+   result_out_reg[15]/D         9.69          10.25 f        -0.56  (VIOLATED)
+   result_out_reg[14]/D         9.69          10.24 f        -0.56  (VIOLATED)
+   result_out_reg[13]/D         9.69          10.23 f        -0.54  (VIOLATED)
+   result_out_reg[11]/D         9.68          10.22 f        -0.54  (VIOLATED)
+   result_out_reg[10]/D         9.68          10.21 f        -0.52  (VIOLATED)
+   result_out_reg[6]/D          9.68          10.20 f        -0.52  (VIOLATED)
+
+
+1

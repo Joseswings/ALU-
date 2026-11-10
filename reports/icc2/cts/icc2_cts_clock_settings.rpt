@@ -1,0 +1,138 @@
+Using libraries: ALU_Jose_GF150.nlib M31LLSC733_GF150_1p4m
+Visiting block ALU_Jose_GF150.nlib:alu_sync_wrapper_power_grid.design
+Design 'alu_sync_wrapper' was successfully linked.
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+Information: Timer using 4 threads
+Timing Update Started(Full_timing_update) : updateCount: 1 / Mem-peak : 547 MB / Date: Tue Nov 10 14:00:52 2026
+
+Information: Corner default: no PVT mismatches. (PVT-032)
+Information: Pin/Port with maximum arrivals in mode: 'default',  'rst'   : '1'. (TIM-134)
+Information: Average arrivals per pin/port in mode: 'default' : '0'. (TIM-136)
+Timing Update Completed: Mem-peak: 563 MB / Date: Tue Nov 10 14:00:52 2026
+
+****************************************
+ Report : clock settings
+ Design : alu_sync_wrapper_power_grid
+ Date   : Tue Nov 10 14:00:52 2026
+****************************************
+
+
+======================================
+Configurations 
+======================================
+
+##Global
+  Corner = default
+    Max transition: around 0.500 (default)
+    Max capacitance: 0.600 (default)
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+##clk
+  Corner = default
+    Max transition: around 0.500 (default)
+    Max capacitance: 0.600 (default)
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+
+======================================
+Routing Rules 
+======================================
+
+##Global
+Routing rule for sink nets: Not specified
+Routing rule for internal nets: Not specified
+Routing rule for root nets: Not specified
+Routing rule for all nets: Not specified
+Net-based routing rules (by set_clock_routing_rule): Not specified
+Net-based routing rules (by set_routing_rule): Not specified
+
+##clk
+Routing rule for sink nets: Not specified
+Routing rule for internal nets: Not specified
+Routing rule for root nets: Not specified
+Routing rule for all nets: Not specified
+Net-based routing rules (by set_clock_routing_rule): Not specified
+Net-based routing rules (by set_routing_rule): Not specified
+
+
+======================================
+Buffers and Inverters 
+======================================
+
+##Buffers
+Name                                   Area      Max Transition       Max Load
+------------------------------------------------------------------------------
+M31LLSC733_GF150_1p4m/BUFX1AS7        8.064               2.549          0.166
+M31LLSC733_GF150_1p4m/BUFX12AS7      38.707               2.549          1.990
+M31LLSC733_GF150_1p4m/BUFX16AS7      51.610               2.549          2.653
+M31LLSC733_GF150_1p4m/BUFX2AS7        9.677               2.549          0.332
+M31LLSC733_GF150_1p4m/BUFX20AS7      64.512               2.549          3.317
+M31LLSC733_GF150_1p4m/BUFX3AS7       12.902               2.549          0.497
+M31LLSC733_GF150_1p4m/BUFX4AS7       14.515               2.549          0.663
+M31LLSC733_GF150_1p4m/BUFX8AS7       27.418               2.549          1.327
+M31LLSC733_GF150_1p4m/CLKBUFX1AS7     8.064               2.549          0.166
+M31LLSC733_GF150_1p4m/CLKBUFX12AS7
+                                     38.707               2.549          1.990
+M31LLSC733_GF150_1p4m/CLKBUFX16AS7
+                                     51.610               2.549          2.653
+M31LLSC733_GF150_1p4m/CLKBUFX2AS7     9.677               2.549          0.332
+M31LLSC733_GF150_1p4m/CLKBUFX20AS7
+                                     64.512               2.549          3.317
+M31LLSC733_GF150_1p4m/CLKBUFX3AS7    12.902               2.549          0.497
+M31LLSC733_GF150_1p4m/CLKBUFX4AS7    14.515               2.549          0.663
+M31LLSC733_GF150_1p4m/CLKBUFX8AS7    27.418               2.549          1.327
+M31LLSC733_GF150_1p4m/DELAX1AS7      14.515               2.549          0.166
+M31LLSC733_GF150_1p4m/DELAX2AS7      16.128               2.549          0.332
+M31LLSC733_GF150_1p4m/DELAX4AS7      20.966               2.549          0.663
+M31LLSC733_GF150_1p4m/DELBX1AS7      27.418               2.549          0.166
+M31LLSC733_GF150_1p4m/DELBX2AS7      30.643               2.549          0.332
+M31LLSC733_GF150_1p4m/DELBX4AS7      35.482               2.549          0.663
+M31LLSC733_GF150_1p4m/DELCX1AS7      54.835               2.549          0.166
+M31LLSC733_GF150_1p4m/DELCX2AS7      58.061               2.549          0.332
+M31LLSC733_GF150_1p4m/DELCX4AS7      62.899               2.549          0.663
+M31LLSC733_GF150_1p4m/DELDX1AS7     111.283               2.549          0.166
+M31LLSC733_GF150_1p4m/DELDX2AS7     114.509               2.549          0.332
+M31LLSC733_GF150_1p4m/DELDX4AS7     119.347               2.549          0.663
+
+##Inverters
+Name                                   Area      Max Transition       Max Load
+------------------------------------------------------------------------------
+M31LLSC733_GF150_1p4m/CLKINVX1AS7     4.838               2.549          0.163
+M31LLSC733_GF150_1p4m/CLKINVX12AS7
+                                     32.256               2.549          1.912
+M31LLSC733_GF150_1p4m/CLKINVX16AS7
+                                     41.933               2.549          2.548
+M31LLSC733_GF150_1p4m/CLKINVX2AS7     8.064               2.549          0.326
+M31LLSC733_GF150_1p4m/CLKINVX20AS7
+                                     51.610               2.549          3.182
+M31LLSC733_GF150_1p4m/CLKINVX3AS7     9.677               2.549          0.488
+M31LLSC733_GF150_1p4m/CLKINVX4AS7    12.902               2.549          0.637
+M31LLSC733_GF150_1p4m/CLKINVX8AS7    22.579               2.549          1.276
+M31LLSC733_GF150_1p4m/INVX1AS7        4.838               2.549          0.166
+M31LLSC733_GF150_1p4m/INVX12AS7      32.256               2.549          1.990
+M31LLSC733_GF150_1p4m/INVX16AS7      41.933               2.549          2.653
+M31LLSC733_GF150_1p4m/INVX2AS7        8.064               2.549          0.332
+M31LLSC733_GF150_1p4m/INVX20AS7      51.610               2.549          3.317
+M31LLSC733_GF150_1p4m/INVX3AS7        9.677               2.549          0.497
+M31LLSC733_GF150_1p4m/INVX4AS7       12.902               2.549          0.663
+M31LLSC733_GF150_1p4m/INVX8AS7       22.579               2.549          1.327
+
+
+======================================
+Spacing Rules 
+======================================
+
+##By design
+No by design spacing rule is specified
+
+##By clock
+No by clock spacing rule is specified
+
+##By libcell
+No by libcell spacing rule is specified
+
+##By clock and libcell
+No by clock and libcell spacing rule is specified
+1

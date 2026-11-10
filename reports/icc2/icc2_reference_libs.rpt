@@ -1,0 +1,13 @@
+****************************************
+Report : Reference Library Report
+Library: ALU_Jose_GF150.nlib
+Version: Y-2026.03-SP2
+Date   : Tue Nov 10 11:45:27 2026
+****************************************
+
+    Name                  Path                                                  Location
+    ------------------------------------------------------------------------------------
+*+  M31LLSC733_GF150_1p4m /home/chuletax/jose_alu/ndm/M31LLSC733_GF150_1p4m.ndm /home/chuletax/jose_alu/ndm/M31LLSC733_GF150_1p4m.ndm
+    "*" = Library currently open
+    "+" = Library has technology information
+1

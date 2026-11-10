@@ -1,0 +1,44 @@
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+Information: The stitching and editing of coupling caps is turned OFF for design 'ALU_Jose_GF150.nlib:alu_sync_wrapper_power_grid.design'. (TIM-125)
+Information: Design alu_sync_wrapper_power_grid has 4860 nets, 0 global routed, 2 detail routed. (NEX-024)
+Information: The RC mode used is CTO for design 'alu_sync_wrapper'. (NEX-022)
+Information: Design Average RC for design alu_sync_wrapper_power_grid  (NEX-011)
+Information: r = 0.462341 ohm/um, via_r = 7.000000 ohm/cut, c = 0.131553 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 0.233481 ohm/um, via_r = 7.000000 ohm/cut, c = 0.150250 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 4858, routed nets = 2, across physical hierarchy nets = 0, parasitics cached nets = 4858, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : clock qor
+        -type summary
+Design : alu_sync_wrapper
+Version: Y-2026.03-SP2
+Date   : Tue Nov 10 14:01:27 2026
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+==============================================
+==== Summary Reporting for Corner default ====
+==============================================
+
+=========================================================== Summary Table for Corner default ===========================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC      Wire
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count    Length
+                                                                Count      Area      Area
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: default, Scenario: default
+clk                                     M,D        55      2        1      9.68      9.68      0.22      0.22         0         0    712.54
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                         55      2        1      9.68      9.68      0.22      0.22         0         0    712.54
+
+
+Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)
+1
