@@ -19,9 +19,8 @@ El flujo llegó a la exportación de `results/gds/alu_jose_GF150_routed.gds`. El
 
 ## Herramientas y archivos externos
 
-Los scripts se ejecutan en un entorno autorizado con Synopsys DC/ICC2 y acceso al PDK GF150/M31. Las rutas del servidor se deben ajustar al entorno de quien ejecute el flujo. Las bibliotecas propietarias del PDK (`.db`, `.ndm`, LEF y archivos tecnológicos) **no se incluyen en este repositorio**. No publiques esos archivos ni derivados si la licencia del curso/PDK no lo permite.
+Los scripts se ejecutan en un entorno autorizado con Synopsys DC/ICC2 y acceso al PDK GF150/M31. Las rutas del servidor se deben ajustar al entorno de quien ejecute el flujo. Las bibliotecas propietarias del PDK (`.db`, `.ndm`, LEF y archivos tecnológicos) **no se incluyen en este repositorio**.
 
-Los videos de entrega deben enlazarse aquí cuando estén listos. Añade un enlace no listado por inciso y asegúrate de que la grabación cumpla las instrucciones de la clase.
 
 ## Estructura
 

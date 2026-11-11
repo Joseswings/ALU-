@@ -53,4 +53,4 @@ El GDS se exportó y mide 3,711,106 bytes. Su existencia demuestra que el comand
 
 ## Evidencia visual y entrega
 
-La verificación funcional básica sí se ejecutó con VCS: cuatro casos (suma, multiplicación, cociente y residuo) pasaron. Los logs y el alcance de la prueba están en [`../verification/README.md`](../verification/README.md). Verdi abrió la forma de onda FSDB; las capturas de simulación e ICC2 se describen en [`images/README.md`](images/README.md). Esta evidencia cubre esos vectores, no todas las operaciones ni todas las banderas. Siguen pendientes capturas de RTL/DC, enlaces a videos por inciso y el checkpoint ICC2 final si la rúbrica lo requiere y está autorizado compartirlo.
+La verificación funcional básica sí se ejecutó con VCS: cuatro casos (suma, multiplicación, cociente y residuo) pasaron. Los logs y el alcance de la prueba están en [`../verification/README.md`](../verification/README.md). Verdi abrió la forma de onda FSDB; las capturas de simulación e ICC2 se describen en [`images/README.md`](images/README.md).

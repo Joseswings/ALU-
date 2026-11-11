@@ -33,7 +33,3 @@ Las capturas siguientes muestran nWave con el FSDB de la simulación funcional. 
 ![Vista general de señales y resultados en Verdi](simulation/verdi_waveform_overview.png)
 
 ![Detalle de las transiciones de la ALU en Verdi](simulation/verdi_waveform_detail.png)
-
-## Capturas pendientes
-
-Las subcarpetas `rtl/` y `dc/` están preparadas para capturas del RTL/testbench y de DC. Añádelas si aportan evidencia que no esté ya más claramente expresada en el código y reportes.
