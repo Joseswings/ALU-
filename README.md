@@ -15,8 +15,7 @@ El flujo llegó a la exportación de `results/gds/alu_jose_GF150_routed.gds`. El
 - [`results/`](results/README.md): netlist sintetizada y GDS generado.
 - [`verification/`](verification/README.md): testbench, logs VCS y evidencia visual Verdi de cuatro casos funcionales.
 - [`docs/informe_final.md`](docs/informe_final.md): análisis de resultados y respuestas de discusión.
-- [`docs/images/`](docs/images/README.md): galería comentada de capturas ICC2 y Verdi.
-- [`GUION_PRESENTACION_ALU.md`](GUION_PRESENTACION_ALU.md): guion de exposición; requiere actualizarse con estos resultados físicos antes de grabar.
+- [`docs/images/`](docs/images/README.md): galería comentada de capturas ICC2 y Verdi.físicos antes de grabar.
 
 ## Herramientas y archivos externos
 
