@@ -53,4 +53,4 @@ El GDS se exportó y mide 3,711,106 bytes. Su existencia demuestra que el comand
 
 ## Evidencia visual y entrega
 
-Añadir capturas seleccionadas en [`images/`](images/README.md): RTL/testbench, simulación, reportes DC, floorplan, CTS y layout routed. Incluir enlaces a los videos por inciso en el README raíz cuando estén grabados. No se recibieron logs de VCS/Verdi ni checkpoints ICC2 en el paquete descargado, así que siguen pendientes para una entrega totalmente reproducible si la rúbrica los exige.
+La verificación funcional básica sí se ejecutó con VCS: cuatro casos (suma, multiplicación, cociente y residuo) pasaron. Los logs y el alcance de la prueba están en [`../verification/README.md`](../verification/README.md). Verdi abrió la forma de onda FSDB; las capturas de simulación e ICC2 se describen en [`images/README.md`](images/README.md). Esta evidencia cubre esos vectores, no todas las operaciones ni todas las banderas. Siguen pendientes capturas de RTL/DC, enlaces a videos por inciso y el checkpoint ICC2 final si la rúbrica lo requiere y está autorizado compartirlo.

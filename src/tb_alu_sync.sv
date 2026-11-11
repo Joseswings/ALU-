@@ -1,37 +1,65 @@
-module tb_alu_sync;
-    parameter WIDTH = 16;
-    
-    logic             clk;
-    logic             rst;
-    logic [WIDTH-1:0] a_in, b_in;
-    logic [2:0]       alu_control_in;
-    logic [WIDTH-1:0] result_out;
-    logic             negative_out, zero_out, carry_out, overflow_out;
+`timescale 1ns/1ps
 
-    // Instancia del sistema síncrono
+module tb_alu_sync;
+    localparam WIDTH = 16;
+
+    logic clk = 0;
+    logic rst;
+    logic [WIDTH-1:0] a_in, b_in;
+    logic [2:0] alu_control_in;
+    logic [WIDTH-1:0] result_out;
+    logic negative_out, zero_out, carry_out, overflow_out;
+    integer tests_passed = 0;
+
     alu_sync_wrapper #(.WIDTH(WIDTH)) dut (.*);
 
-    // Generación del reloj (Periodo de 10ns)
     always #5 clk = ~clk;
 
+    task automatic check_op(
+        input logic [2:0] op,
+        input logic [WIDTH-1:0] lhs,
+        input logic [WIDTH-1:0] rhs,
+        input logic [WIDTH-1:0] expected
+    );
+        begin
+            @(negedge clk);
+            a_in = lhs;
+            b_in = rhs;
+            alu_control_in = op;
+
+            repeat (2) @(posedge clk);
+            #1;
+
+            if (result_out !== expected) begin
+                $error("FAIL op=%b a=%0d b=%0d: esperado=%0d, obtenido=%0d",
+                       op, lhs, rhs, expected, result_out);
+                $fatal(1, "La prueba funcional fallo");
+            end
+
+            $display("PASS op=%b a=%0d b=%0d resultado=%0d",
+                     op, lhs, rhs, result_out);
+            tests_passed = tests_passed + 1;
+        end
+    endtask
+
     initial begin
-        // Inicialización y Reset
-        clk = 0; rst = 1;
-        a_in = 0; b_in = 0; alu_control_in = 0;
-        #15 rst = 0;
+        $dumpfile("waves/alu_sync.vcd");
+        $dumpvars(0, tb_alu_sync);
 
-        // Estímulo 1: Suma (010) -> 50 + 25
-        a_in = 16'd50; b_in = 16'd25; alu_control_in = 3'b010;
-        #20; // Esperar 2 ciclos de reloj
+        rst = 1;
+        a_in = 0;
+        b_in = 0;
+        alu_control_in = 0;
 
-        // Estímulo 2: Multiplicación (100) -> 10 * 5
-        a_in = 16'd10; b_in = 16'd5; alu_control_in = 3'b100;
-        #20;
+        repeat (2) @(negedge clk);
+        rst = 0;
 
-        // Estímulo 3: División Cociente (101) -> 100 / 3
-        a_in = 16'd100; b_in = 16'd3; alu_control_in = 3'b101;
-        #20;
+        check_op(3'b010, 16'd50,  16'd25, 16'd75); // suma
+        check_op(3'b100, 16'd10,  16'd5,  16'd50); // multiplicacion
+        check_op(3'b101, 16'd100, 16'd3,  16'd33); // cociente
+        check_op(3'b110, 16'd100, 16'd3,  16'd1);  // residuo
 
+        $display("RESULTADO: %0d pruebas pasaron", tests_passed);
         $finish;
     end
 endmodule
